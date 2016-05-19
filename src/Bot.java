@@ -48,15 +48,15 @@ public class Bot {
 	public void render(Graphics g){
 		if(c == 'B'){
 			g.setColor(Color.blue);
-			g.drawString("Blue Bot is located a " + x, 50, 420);
+			g.drawString("Blue Bot is located a x=" + x + " Button " +(x-40)/10, 50, 420);
 			if(B !=null)
-				g.drawString("Blue Button is located a " + B.x, 50, 430);
+				g.drawString((x-40)/10 +" Button is located at " + B.x, 50, 430);
 		}
 		if(c == 'O'){
 			g.setColor(Color.orange);
-			g.drawString("Orange Bot is located at " + x, 50, 440);
+			g.drawString("Orange Bot is located at x=" + x +" Button " +(x-40)/10, 50, 440);
 			if(B !=null)
-				g.drawString("Orange Button is located a " + B.x, 50, 450);
+				g.drawString((x-40)/10 +" Button is located at " + B.x, 50, 450);
 		}
 		g.fillRect(x, y, 5, 10);
 		

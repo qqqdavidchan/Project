@@ -32,20 +32,20 @@ public class BotTrust {
 			//get the number of trials
 			//will only be called onces and only once
 			if(panel.On == true && trials==true){
-				System.out.println("Executed");
+				//System.out.println("Executed");
 				input = new Scanner(System.in) ;
 				T = input.nextInt() ;
 				trials=false;
 				Got_T=true;
 				SeqCall=true;
-				System.out.println("Executed trials");
+				//System.out.println("Executed trials");
 			}
 			
 			//get the sequence
 			//called n trials amount of times
 	        if ( curT <= T && Got_T==true && SeqCall==true)
 	        {
-	        	System.out.println("Executed");
+	        	//System.out.println("Executed");
 	            X = input.nextInt() ;
 	            a = new int[X] ;
 	            for (int j = 0 ; j < X ; j ++)
@@ -65,12 +65,12 @@ public class BotTrust {
 	            cost = 0 ;
 	            SeqCall = false;
 	            GoingThouSeq=true;
-				System.out.println("Executed seq");
+				//System.out.println("Executed seq");
 	        }
 	        
 	        if (idx < a.length && GoingThouSeq == true)
 	        {
-	        	System.out.println("Executed");
+	        	//System.out.println("Executed");
 	            //System.out.println(free);
 	            tmp = a[idx] ;
 	            nxt = tmp < 200 ? 0 : 1 ;
@@ -121,7 +121,7 @@ public class BotTrust {
 	            }
 	            idx ++ ; 
 	            cur = nxt ;
-				System.out.println("Executed array");
+				//System.out.println("Executed array");
 	        }
 	        
 	        if(idx >= a.length && curT <= T){
@@ -129,7 +129,7 @@ public class BotTrust {
 	        	GoingThouSeq = false;
 	        	curT++;
 	        	SeqCall=true;
-				System.out.println("NEXT SEQUENCE");
+				//System.out.println("NEXT SEQUENCE");
 	        }
 		}
 	}
