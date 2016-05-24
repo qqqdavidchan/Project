@@ -9,3 +9,4 @@ type the input in teh console and it will move
 
 Second function is commited out
 its the answer to the bot trust question
+the Main.java is were you run it
